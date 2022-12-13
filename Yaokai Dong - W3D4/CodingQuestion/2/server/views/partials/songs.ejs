@@ -1,0 +1,10 @@
+<% songs.forEach(song => { %>
+  <div>
+    <span><%= song.id %></span>
+    <span><%= song.title %></span>
+    <span><%= song.language %></span>
+    <span><%= song.genre %></span>
+    <span><%= song.artist %></span>
+    <button class="like">Like</button>
+  </div>
+<% }); %>

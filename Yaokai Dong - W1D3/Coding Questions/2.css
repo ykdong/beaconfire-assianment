@@ -1,0 +1,88 @@
+/* Method 1 use grid line */
+/* div {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 7fr 1fr;
+  height: 100vh;
+}
+header {
+  background-color: #AFE1AF;
+  grid-area: 1/1/2/4;
+}
+
+span {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+
+nav, aside {
+  background-color: #FFFFE0;
+}
+
+nav {
+  grid-area: 2/1/3/2;
+}
+
+aside {
+  grid-area: 2/3/3/4;
+}
+
+article {
+  background-color: white;
+  grid-area: 2/2/3/3;
+}
+
+footer {
+  background-color: yellow;
+  grid-area: 3/1/4/4;
+} */
+
+
+/* method 2 use grid area name */
+span {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+
+div {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: 
+  "header header header header header"
+  "header header header header header"
+  "nav article article article aside"
+  "nav article article article aside"
+  "nav article article article aside"
+  "nav article article article aside"
+  "nav article article article aside"
+  "nav article article article aside"
+  "nav article article article aside"
+  "footer footer footer footer footer";
+}
+
+header {
+  background-color: #AFE1AF;
+  grid-area: header;
+}
+
+nav {
+  background-color: #FFFFE0;
+  grid-area: nav;
+}
+
+aside {
+  background-color: #FFFFE0;
+  grid-area: aside;
+}
+
+article {
+  background-color: white;
+  grid-area: article;
+}
+
+footer {
+  background-color: yellow;
+  grid-area: footer;
+}

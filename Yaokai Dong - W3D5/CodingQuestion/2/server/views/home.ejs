@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head'); %>
+</head>
+<body>
+
+<main>
+  <h1>Spotify Lite</h1>
+  <div>
+    <button class="logout top-right">Log Out</button>
+  </div>
+  <div>
+    <%- include('partials/searchBar'); %>
+  </div>
+  <div class="profile left">
+    <h3>User Profile</h3>
+    <%- include('partials/profile'); %>
+  </div>
+  <div class="songs middle">
+    <h3>Favorite Songs</h3>
+    <%- include('partials/songs'); %>
+  </div>
+  <div class="songs middle">
+    <h3>Followed Artists</h3>
+    <%- include('partials/artists'); %>
+  </div>
+</main>
+
+<footer>
+  <%- include('partials/footer'); %>
+</footer>
+
+</body>
+</html>

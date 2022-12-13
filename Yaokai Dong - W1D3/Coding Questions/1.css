@@ -1,0 +1,33 @@
+header {
+  background-color: #AFE1AF;
+  height: 20vh;
+}
+
+span {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+
+nav, aside {
+  background-color: #FFFFE0;
+  width: 15%;
+}
+
+article {
+  background-color: white;
+  width: 70%;
+}
+
+footer {
+  background-color: yellow;
+  height: 10vh;
+}
+
+div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 70vh;
+}
+

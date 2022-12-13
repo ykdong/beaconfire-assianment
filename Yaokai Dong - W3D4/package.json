@@ -1,0 +1,25 @@
+{
+  "name": "yaokai-dong---w3d3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev_q1": "nodemon CodingQuestion/1/server & sass --watch CodingQuestion/1/server/scss:CodingQuestion/1/server/public/styles",
+    "dev_q2": "nodemon CodingQuestion/2/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "nodemonConfig": {
+    "ext": "js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

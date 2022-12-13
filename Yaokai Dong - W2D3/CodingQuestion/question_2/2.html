@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="2.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <form class="search">
+    <label for="userInput">id:</label>
+    <input type="text" id="userInput" required></input>
+    <button type="submit" id="btn">Search</button>
+  </form>
+  <div id="result">
+    <table>
+      <thead id="userInfoHeader"></thead>
+      <tbody id="userInfoTable"></tbody>
+    </table>
+    <table>
+      <thead id="userPostHeader"></thead>
+      <tbody id="userPostTable"></tbody>
+    </table>
+    <table>
+      <thead id="userTodoHeader"></thead>
+      <tbody id="userTodoTable"></tbody>
+    </table>
+  </div>
+</body>
+<script src="2.js"></script>
+</html>

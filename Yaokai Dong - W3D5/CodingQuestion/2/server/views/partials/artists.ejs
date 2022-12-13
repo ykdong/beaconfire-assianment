@@ -1,0 +1,12 @@
+<% if (artists) { %>
+  <% artists.forEach(artist => { %>
+    <div>
+      <span>Artist ID:</span>
+      <span><%= artist.id %></span>
+      <span>Artist Name:</span>
+      <span><%= artist.name %></span>
+    </div>
+  <% }); %>
+<% } else { %>
+  <span>No followed Artists yet</span>
+<% } %>

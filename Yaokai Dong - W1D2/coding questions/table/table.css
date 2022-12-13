@@ -1,0 +1,15 @@
+table {
+  margin: auto;
+  border-spacing: 2px;
+  border-collapse: separate;
+  border: 1px solid black;
+  box-shadow: 10px 20px 8px 1px grey;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+.time {
+  font-weight: 600;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="questionnaireStyle.css" />
+  <title>Questionnaire</title>
+</head>
+<body>
+  <h1>Application for permission to date my daughter</h1>
+  <p><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+  <form>
+    <p>Personal Details</p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter name here"/>
+    <br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="Enter addredd here"/>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email here"/>
+    <br>
+    <label for="phonenumber">Phone Number:</label>
+    <input type="number" id="phonenumber" name="phonenumber" placeholder="Enter 10 digit number"/>
+    <br>
+    <label for="iq">IQ:</label>
+    <input type="number" id="iq" name="iq" placeholder="Enrter IQ here"/>
+    <br>
+    <p>Gender</p>
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="gender">Male</label>
+    <br>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="gender">Female</label>
+    <br>
+    <input type="radio" id="gender_other" name="gender" value="gender_other" />
+    <label for="gender">Other</label>
+    <br>
+    <label for="date">Date of Proposed Outing:</label>
+    <input type="date" id="date" name="date" class="date" />
+    <br>
+    <hr>
+  
+    <p>Check All That Apply</p>
+    <input type="checkbox" id="checkBox_1" name="checkBox_1" />
+    <label for="checkBox_1">I have tattoos and/or piercings</label>
+    <br>
+    <input type="checkbox" id="checkBox_2" name="checkBox_2" />
+    <label for="checkBox_2">I am more than 2 years older than my daughter</label>
+    <br>
+    <input type="checkbox" id="checkBox_3" name="checkBox_3" />
+    <label for="checkBox_3">I own a panel van or V8 ute</label>
+    <br>
+    <input type="checkbox" id="checkBox_4" name="checkBox_4" />
+    <label for="checkBox_4">I work full-time</label>
+    <br>
+    <input type="checkbox" id="checkBox_5" name="checkBox_5" />
+    <label for="checkBox_5">My parents are rich</label>
+    <br>
+    <input type="checkbox" id="checkBox_6" name="checkBox_6" />
+    <label for="checkBox_6">Is the date at a well lit public location</label>
+    <br>
+    <hr>
+
+    <label for="persuasion">Political Persuasion:</label>
+    <select name="persuasion" id="persuasion">
+      <option value=""></option>
+      <option value="leftWing">Left Wing</option>
+      <option value="rightWing">Right Wing</option>
+      <option value="conservative">Conservative</option>
+    </select>
+    <label for="education">Education Level Completed:</label>
+    <select name="education" id="education">
+      <option value=""></option>
+      <option value="university">University/College</option>
+      <option value="highSchool">High School</option>
+      <option value="none">None</option>
+    </select>
+    <hr>
+
+    <p>Essay Section</p>
+    <p>In 50 words or more explain wht you want to date my daughter</p>
+    <textarea id="reasonToDate" name="reasonToDate" placeholder="Enter Text Here"></textarea> 
+    <p>Please upload contact details for 2 references</p>
+    <textarea id="references" name="references" placeholder="Enter Text Here"></textarea>
+    <br> 
+
+    <label>Upload Police Clearance Certificate, Bank Statement and Medical Certificates here:</label>
+    <input type="file" name="file"></input>
+    <br>
+    
+  </form>
+  <button type="submit">Send your application</button>
+</body>
+</html>

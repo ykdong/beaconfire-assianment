@@ -1,0 +1,28 @@
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 30%;
+  gap: 0;
+  border: 2px solid #D3D3D3;
+}
+.tab button {
+  border: none;
+  padding: 1rem;
+}
+
+.tab button:hover {
+  background-color: #D3D3D3;
+}
+
+div[id^="info"] {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #D3D3D3;
+  width: 30%;
+}
+
+div h2, div p {
+  padding-left: 1rem;
+}

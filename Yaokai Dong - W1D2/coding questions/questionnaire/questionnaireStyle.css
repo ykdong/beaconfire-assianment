@@ -1,0 +1,16 @@
+form {
+  width: 55%;
+  border: 2px solid gray;
+}
+
+hr {
+  border: 1px solid gray;
+}
+
+textarea {
+  width: 60%;
+}
+
+button {
+  margin: 15px 0;
+}

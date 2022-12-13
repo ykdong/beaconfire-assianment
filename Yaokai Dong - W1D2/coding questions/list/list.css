@@ -1,0 +1,13 @@
+ol[type="I"] {
+  width: fit-content;
+}
+
+li:nth-child(odd):hover{
+  background-color: yellow;
+}
+
+li:nth-child(even):hover::first-letter {
+  color: red;
+  font-size: 35px;
+}
+

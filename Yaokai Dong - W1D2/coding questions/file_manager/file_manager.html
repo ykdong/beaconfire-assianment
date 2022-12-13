@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="file_manager.css" />
+  <title>File Manager</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size</th>
+        <th>Date Modified</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          <a href="webFolder.html">
+            <span class="material-symbols-outlined folder-icon">folder</span>
+            web/
+          </a>
+        </td>
+        <td></td>
+        <td id="date"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    document.getElementById("date").innerHTML = new Date().toDateString();
+  </script>
+  
+</body>
+</html>

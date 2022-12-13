@@ -1,0 +1,33 @@
+<% if (result.length) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Priority</th>
+        <th>Time Stamp</th>
+        <th>--</th>
+      </tr>
+    </thead>
+    <tbody id="itemContainer">
+      <% result.forEach((data, index) => { %>
+        <tr id=row<%= index %>>
+          <td><%= (index + 1) %></td>
+          <td id=title<%= index %>><%= data.title %></td>
+          <td id=description<%= index %>><%= data.description %></td>
+          <td id=status<%= index %>><%= data.status %></td>
+          <td id=priority<%= index %>><%= data.priority %></td>
+          <td><%= data.timeStamp %></td>
+          <td>
+            <button class="delete" value=<%= index %>>Delete</button>
+            <button class="edit" value=<%= index %>>Edit</button>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+<% } else { %>
+  <p>No Todo items yet</p>
+<% }; %>

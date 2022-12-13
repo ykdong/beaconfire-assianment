@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="2.css" rel="stylesheet" />
+</head>
+<body>
+  <table>
+    <caption>Product List</caption>
+    <thead>
+      <tr>
+        <td>Product Name</td>
+        <td>Product Category</td>
+        <td>Product Price</td>
+        <td>Action</td>
+      </tr>
+    </thead>
+    <tbody id="listBody">
+      <tr id="row1">
+        <td>M&M</td>
+        <td>Snacks</td>
+        <td>$1.99</td>
+        <td><button value="row1">Delete</button></td>
+      </tr>
+      <tr id="row2">
+        <td>Table</td>
+        <td>Furniture</td>
+        <td>$199</td>
+        <td><button value="row2">Delete</button></td>
+      </tr>
+      <tr id="row3">
+        <td>Kale</td>
+        <td>Vegetables</td>
+        <td>$2.49</td>
+        <td><button value="row3">Delete</button></td>
+      </tr>
+    </tbody>
+  </table><hr>
+  <h3>Add Product</h3>
+  <form>
+    <label for="name">Product Name:</label>
+    <input type="text" id="name" required></input>
+    <label for="category">Product Category</label>
+    <input type="text" id="category" required></input>
+    <label for="price">Product Price</label>
+    <input type="number" id="price" required></input>
+    <button type="submit" id="submit">Add New</button>
+  </form>
+</body>
+<script src="2.js"></script>
+</html>

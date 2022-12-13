@@ -1,0 +1,36 @@
+$hover-color: #90ee90;
+$btn-color-red: #FF7F7F;
+$btn-color-grey: #d3d3d3;
+
+th {
+  padding: 1rem;
+  background-color: $hover-color;
+  border: 1px solid grey;
+  border-bottom: none;
+  border-collapse: collapse;
+}
+
+tr {
+  td {
+    padding: 1rem;
+  }
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.delete, .edit {
+  background-color: $btn-color-red;
+  width: 4rem;
+  height: 2rem;
+  color: $font-color;
+  border: none;
+  border-radius: 7%;
+}
+.delete {
+  background-color: $btn-color-red;
+}
+
+.edit {
+  background-color: $btn-color-grey;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head'); %>
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+
+<main>
+  <h1>Todo App</h1>
+  <div>
+    <%- include('partials/form'); %>
+  </div>
+  <% if (statusCode === 200) { %>
+    <section><%= message %></section>
+    <div>
+      <%- include('partials/table'); %>
+    </div>
+  <% } else { %>
+    <p><%= message %></p>
+  <% }; %>
+</main>
+
+<footer>
+  <%- include('partials/footer'); %>
+</footer>
+
+</body>
+<script src="/scripts/index.js"></script>
+</html>
