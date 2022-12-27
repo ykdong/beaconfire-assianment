@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, Subject } from 'rxjs';
+import { User } from '../interface/user';
 
 // inject this services into root global app scope, thus any component or service could use this service
 @Injectable({ providedIn: 'root' }) 
@@ -27,8 +28,8 @@ export class UsersService {
   }
 
   // create a method to emit the value in the Observable Stream
-  onNewUser(val: string): void {
+  onNewUser(user: User): void {
     // 'next' will describe the next emitted value in the Observable Stream
-    this.subject.next(val);
+    this.subject.next(user);
   }
 }

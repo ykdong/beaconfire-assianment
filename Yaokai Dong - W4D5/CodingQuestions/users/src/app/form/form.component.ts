@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { UsersService } from '../service/users.service';
+import { User } from '../interface/user';
 
 @Component({
   selector: 'app-form',
@@ -14,9 +15,9 @@ export class FormComponent implements OnInit {
     name: ['', Validators.required]
   })
   onClick() {
-    let newName = this.fBuilder.getRawValue().name;
-    if (typeof newName === 'string') {
-      this.UsersService.onNewUser(newName);
+    const user: User = {...this.fBuilder.getRawValue()}
+    if (typeof user.name === 'string') {
+      this.UsersService.onNewUser(user);
     }
   }
 }
